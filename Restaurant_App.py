@@ -4,8 +4,9 @@
 # In[8]:
 
 
-from streamlit_jupyter import StreamlitPatcher
-StreamlitPatcher().jupyter()  
+import streamlit as st
+
+
 
 
 # In[9]:
