@@ -21,6 +21,13 @@ import joblib
 # In[10]:
 
 
+import joblib
+model = joblib.load("C:/Users/user/mlmodel.pkl")
+
+
+
+
+
 st.set_page_config(layout = 'wide')
 
 
