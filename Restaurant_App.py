@@ -22,7 +22,7 @@ import joblib
 
 
 import joblib
-model = joblib.load("C:/Users/user/mlmodel.pkl")
+model = joblib.load("mlmodel.pkl")
 
 
 
@@ -225,6 +225,7 @@ if predictbutton:
 
 
 # In[ ]:
+
 
 
 
