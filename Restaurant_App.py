@@ -151,7 +151,7 @@ X_new = scaler.transform(my_X_values)
 
 if predictbutton:
     st.snow()
-    prediction = model.predict(X_new)
+    prediction = model.predict(X_new)[0]
     if prediction < 2.5:
         st.write("Poor")
     elif prediction < 3.5:
@@ -225,6 +225,7 @@ if predictbutton:
 
 
 # In[ ]:
+
 
 
 
