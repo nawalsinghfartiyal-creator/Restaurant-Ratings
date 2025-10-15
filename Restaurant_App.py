@@ -131,7 +131,7 @@ bookingstatus = flatten_scalar(bookingstatus)
 deliverystatus = flatten_scalar(deliverystatus)
 pricerange = flatten_scalar(pricerange)
 
-my_X_values = np.column_stack((averagecost, bookingstatus, deliverystatus, pricerange))
+my_X_values = np.array([[averagecost, bookingstatus, deliverystatus, pricerange]])
 
 print(my_X_values)
 print(my_X_values.shape)
@@ -226,6 +226,7 @@ if predictbutton:
 
 
 # In[ ]:
+
 
 
 
