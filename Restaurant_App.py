@@ -143,6 +143,7 @@ print(my_X_values.shape)
 import joblib
 
 scaler = joblib.load("scaler.save")    
+my_X_values = np.array(my_X_values).reshape(1, -1) 
 X_new = scaler.transform(my_X_values)  
 
 
@@ -226,6 +227,7 @@ if predictbutton:
 
 
 # In[ ]:
+
 
 
 
