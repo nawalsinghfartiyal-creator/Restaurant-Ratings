@@ -68,25 +68,25 @@ st.divider()
 
 
 averagecost = st.number_input("Please enter the estimated average cost for two" , min_value = 50 , max_value = 99999 , value = 1000 , step = 200)
-
+st.write("Average Cost Input:", averagecost)
 
 # In[26]:
 
 
 tablebooking = st.selectbox("Restaurant has Table booking ?" , ["Yes" , "No"])
-
+st.write("Table Booking Input:", tablebooking)
 
 # In[27]:
 
 
 onlinedelivery = st.selectbox("Restaurant has online delivery ?" , ["Yes" , "No"])
-
+st.write("Online Delivery Input:", onlinedelivery)
 
 # In[28]:
 
 
 pricerange = st.selectbox("What is the price range (1 Cheapest , 4 Most Expensie)" , [1, 2, 3, 4])
-
+st.write("Price Range Input:", pricerange)
 
 # In[29]:
 
@@ -227,6 +227,7 @@ if predictbutton:
 
 
 # In[ ]:
+
 
 
 
