@@ -116,6 +116,8 @@ bookingstatus = 1 if tablebooking == 'Yes' else 0
 
 
 deliverystatus = 1 if onlinedelivery == 'Yes' else 0
+st.write("Booking status (numeric):", bookingstatus)
+st.write("Delivery status (numeric):", deliverystatus)
 
 
 # In[34]:
@@ -132,7 +134,7 @@ deliverystatus = flatten_scalar(deliverystatus)
 pricerange = flatten_scalar(pricerange)
 
 my_X_values = np.array([[averagecost, bookingstatus, deliverystatus, pricerange]])
-
+st.write("Model input array:", my_X_values)
 print(my_X_values)
 print(my_X_values.shape)
 
@@ -145,9 +147,13 @@ import joblib
 scaler = joblib.load("scaler.save")    
 my_X_values = np.array(my_X_values).reshape(1, -1) 
 X_new = scaler.transform(my_X_values)  
-
+st.write("Scaled input:", X_new)
 
 # In[37]:
+prediction = model.predict(X_new)
+st.write("Raw model prediction:", prediction)
+
+
 
 
 if predictbutton:
@@ -227,6 +233,7 @@ if predictbutton:
 
 
 # In[ ]:
+
 
 
 
