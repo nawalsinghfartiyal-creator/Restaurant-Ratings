@@ -146,7 +146,7 @@ st.write("Scaled input:", X_new)
 import joblib
 
 scaler = joblib.load("scaler.save")    
-my_X_values = np.array(my_X_values).reshape(1, -1) 
+
 
 
 # In[37]:
@@ -233,6 +233,7 @@ if predictbutton:
 
 
 # In[ ]:
+
 
 
 
