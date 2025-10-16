@@ -137,7 +137,8 @@ my_X_values = np.array([[averagecost, bookingstatus, deliverystatus, pricerange]
 st.write("Model input array:", my_X_values)
 print(my_X_values)
 print(my_X_values.shape)
-
+X_new = scaler.transform(my_X_values)  
+st.write("Scaled input:", X_new)
 
 # In[35]:
 
@@ -146,8 +147,7 @@ import joblib
 
 scaler = joblib.load("scaler.save")    
 my_X_values = np.array(my_X_values).reshape(1, -1) 
-X_new = scaler.transform(my_X_values)  
-st.write("Scaled input:", X_new)
+
 
 # In[37]:
 prediction = model.predict(X_new)
@@ -233,6 +233,7 @@ if predictbutton:
 
 
 # In[ ]:
+
 
 
 
