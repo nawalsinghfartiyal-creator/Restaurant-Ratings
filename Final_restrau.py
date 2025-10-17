@@ -76,14 +76,19 @@ st.write("Raw model prediction:", prediction)
 
 
 if prediction < 2.5:
+    st.snow()
     st.write("Poor")
 elif prediction < 3.5:
+    st.snow()
     st.write("Average")
 elif prediction < 4.0:
+    st.snow()
     st.write("Good")
 elif prediction < 4.5:
+    st.snow()
     st.write("Very Good")
 else:
+    st.snow()
     st.write("Excellent")
 
 
@@ -100,6 +105,7 @@ else:
 
 
 # In[ ]:
+
 
 
 
