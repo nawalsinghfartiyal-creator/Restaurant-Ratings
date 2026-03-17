@@ -111,4 +111,4 @@ Exploratory analysis was conducted to understand the structure of the data and i
 
 ## ⚙️ Deployment
 
-The model is deployed using **Streamlit**, allowing users to interactively input restaurant features and receive predicted ratings in real time
+The model is deployed using **Streamlit**, allowing users to interactively input restaurant features and receive predicted ratings in real time.
