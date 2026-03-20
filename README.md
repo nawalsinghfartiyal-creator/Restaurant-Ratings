@@ -5,7 +5,7 @@ A machine learning project that predicts restaurant ratings based on various fea
 ## 🚀 Live Demo
 ####  Streamlit App:
 
-https://restaurant-ratings-hzrvhdy5iz8ezoaaz6u2dd.streamlit.app/
+https://uecm9k5vyqsa8qnrmmeeys.streamlit.app/
 
 
 ## 📌 Project Overview
